@@ -1,0 +1,289 @@
+/* Reset some basic elements */
+body, h1, h2, p, li, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #000000;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+}
+
+.header .logo h1 {
+  margin: 0;
+  font-size: 1.8em;
+  letter-spacing: 1px;
+}
+
+.header .menu-item {
+  display: flex;
+}
+
+.header .menu-item a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.header .menu-item a:hover {
+  background-color: #948d8d;
+  border-radius: 10px;
+}
+.header .menu-item a:active {
+  background-color: rgb(184, 172, 172); 
+  transform: scale(0.98);
+}
+
+/* Background Section */
+.bg-sec {
+  background: url('Imges/hallstatt-3609863_640.jpg');
+  color: white;
+  background-size: cover; 
+  text-align: center;
+  padding: 100px 20px;
+  height: 290px;
+}
+.bg-sec .txt {
+  margin-top: 90px; 
+  margin-bottom: 30px; 
+}
+
+.bg-sec .txt span {
+  color: #ff6347;
+}
+
+.bg-sec .srch {
+  margin-top: 20px;
+}
+
+.bg-sec input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+}
+
+.bg-sec button {
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bg-sec button:hover {
+  background-color: #ff4500;
+}
+
+/* Offer Section */
+.offer {
+  background-color: white;
+  padding: 50px 20px;
+ 
+}
+
+.offer .txt h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+.offer .main-con {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.offer .box {
+  background-color: #f4f4f4;
+  margin: 3px;
+  padding: 6px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 0 0 auto;
+  transition: transform 0.3s;
+}
+
+.offer .box:hover {
+  transform: translateY(-5px);
+}
+
+.offer .box img {
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.offer .box .btn button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.offer .box .btn button:hover {
+  background-color: #555;
+}
+
+/* Destination Section */
+.dest {
+  padding: 20px;
+  background-color: #e4dfdf;
+}
+.dest .txt h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+.dest .main-con {
+  display: grid;
+  gap: 30px;
+}
+
+.dest .top-row, .dest .bottom-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dest .box2 {
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.dest .box2:hover {
+  transform: translateY(-5px);
+}
+
+.dest .box2 img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.dest .name {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+/* Contact Section */
+.contact {
+  background-color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact .txt h1 {
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+.contact .main-con {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contact .box {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  width: 250px;
+}
+
+.contact .box i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer .align {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .logo h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.footer .menu-item {
+  display: flex;
+}
+
+.footer .menu-item a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.footer .menu-item a:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.footer .txt-footer {
+  flex: 1 1 100%;
+  margin-top: 20px;
+}
+
+.copy {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.copy .social i {
+  font-size: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.copy .social i:hover {
+  color: #ff6347;
+}
+
+/* Media Queries for Responsiveness */
+
+
+  .footer .align {
+    flex-direction: column;
+    align-items: center;
+  }
+
